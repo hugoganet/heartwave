@@ -1,4 +1,4 @@
-import { db } from '../firebaseConfig';
+import { db } from '../firebase/firebaseConfig';
 import { doc, setDoc, getDoc, serverTimestamp, onSnapshot, collection, getDocs } from 'firebase/firestore';
 
 // Save or update user's current location in Firestore

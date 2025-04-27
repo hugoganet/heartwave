@@ -1,5 +1,5 @@
 import { getAuth, signInAnonymously, signOut } from 'firebase/auth';
-import { app } from '../firebaseConfig';
+import { app } from '../firebase/firebaseConfig';
 
 // Handle anonymous login
 export const anonymousLogin = async () => {
