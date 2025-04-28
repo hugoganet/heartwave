@@ -1,5 +1,4 @@
 {
-  // To be filled automatically once dependencies are installed.
   "node": "20.7.0",
   "python": "3.11.2",
   "dependencies": {
