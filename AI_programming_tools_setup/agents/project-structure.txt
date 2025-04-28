@@ -1,0 +1,35 @@
+/Users/hugoganet/Code/heartwave
+├── assets
+│   ├── adaptive-icon.png
+│   ├── favicon.png
+│   ├── icon.png
+│   └── splash-icon.png
+├── src
+│   ├── components
+│   │   ├── MatchCard.tsx
+│   │   └── UserCard.tsx
+│   ├── firebase
+│   │   └── firebaseConfig.ts
+│   ├── hooks
+│   │   └── useHomeLogic.ts
+│   ├── navigation
+│   │   └── AppNavigator.tsx
+│   ├── screens
+│   │   ├── HomeScreen.tsx
+│   │   ├── MatchesScreen.tsx
+│   │   └── WelcomeScreen.tsx
+│   ├── services
+│   │   ├── authService.ts
+│   │   ├── firestoreService.ts
+│   │   └── locationService.ts
+│   ├── styles
+│   │   └── homeStyles.ts
+│   └── utils
+│       ├── constants.ts
+│       └── distance.ts
+├── app.json
+├── App.tsx
+├── index.ts
+├── package-lock.json
+├── package.json
+└── tsconfig.json
