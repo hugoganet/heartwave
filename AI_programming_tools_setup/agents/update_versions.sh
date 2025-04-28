@@ -19,7 +19,7 @@ echo "Updating versions..."
 repo_root="$(git rev-parse --show-toplevel)"
 
 # Define output file
-output_file="$repo_root/AI_programming_tools_setup/agents/versions.jsonc"
+output_file="$repo_root/AI_programming_tools_setup/agents/versions.json"
 
 # -------------------------
 # 2. Capture Node.js version
@@ -80,7 +80,7 @@ elif [ -n "$PYTHON_DEPENDENCIES" ]; then
 fi
 
 # -------------------------
-# 7. Write to versions.jsonc
+# 7. Write to versions.json
 # -------------------------
 cat > "$output_file" <<EOL
 {
@@ -93,4 +93,4 @@ cat > "$output_file" <<EOL
 }
 EOL
 
-echo "✅ versions.jsonc updated at AI_programming_tools_setup/agents/versions.jsonc"
+echo "✅ versions.json updated at AI_programming_tools_setup/agents/versions.json"

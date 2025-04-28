@@ -6,8 +6,6 @@ set -euo pipefail
 # Find the root of the repo
 repo_root="$(git rev-parse --show-toplevel)"
 
-echo "repo_root: $repo_root"
-
 # Paths
 output_file="$repo_root/AI_programming_tools_setup/agents/knowledge_base.md"
 info_file="$repo_root/AI_programming_tools_setup/agents/project_info.md"

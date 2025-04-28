@@ -39,6 +39,10 @@ export default function HomeScreen({ navigation }: any) {
           ))}
 
         <View style={homeStyles.buttonContainer}>
+          <Button title="👤 My Profile" onPress={() => navigation.navigate('Profile')} />
+        </View>
+
+        <View style={homeStyles.buttonContainer}>
           <Button title="💬 View Matches" onPress={() => navigation.navigate('Matches')} />
         </View>
 

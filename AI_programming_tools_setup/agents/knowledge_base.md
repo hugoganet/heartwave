@@ -40,7 +40,6 @@ version: 0.1.0
 - No heavy battery-draining background services: location updates must be lightweight and manual/periodic
 - Initial target audience: France, Europe (GDPR compliant by default using Firebase)
 - App MVP must be lightweight (<20MB bundle size)
-
 ---
 
 ## Dependency Versions
@@ -58,6 +57,7 @@ version: 0.1.0
 - **@react-navigation/native**: ^7.1.6
 - **@react-navigation/native-stack**: ^7.3.10
 - **expo**: ~52.0.46
+- **expo-image-picker**: ^16.0.6
 - **expo-location**: ~18.0.10
 - **expo-status-bar**: ~2.0.1
 - **firebase**: ^11.6.1
@@ -83,10 +83,13 @@ version: 0.1.0
 │   ├── components
 │   │   ├── MatchCard.tsx
 │   │   └── UserCard.tsx
+│   ├── features
+│   │   └── profile
 │   ├── firebase
 │   │   └── firebaseConfig.ts
 │   ├── hooks
-│   │   └── useHomeLogic.ts
+│   │   ├── useHomeLogic.ts
+│   │   └── useProfileLogic.ts
 │   ├── navigation
 │   │   └── AppNavigator.tsx
 │   ├── screens
@@ -96,9 +99,11 @@ version: 0.1.0
 │   ├── services
 │   │   ├── authService.ts
 │   │   ├── firestoreService.ts
-│   │   └── locationService.ts
+│   │   ├── locationService.ts
+│   │   └── profileService.ts
 │   ├── styles
-│   │   └── homeStyles.ts
+│   │   ├── homeStyles.ts
+│   │   └── profileStyles.ts
 │   └── utils
 │       ├── constants.ts
 │       └── distance.ts
@@ -107,4 +112,5 @@ version: 0.1.0
 ├── index.ts
 ├── package-lock.json
 ├── package.json
+├── README.md
 └── tsconfig.json
